@@ -1,0 +1,16 @@
+x = float(input("Enter the value of x: "))
+
+n = int(input("Enter the number of terms in the series: "))
+
+result = 0
+
+fact = 1
+
+for i in range(n):
+
+    fact *= i+1
+
+    result += (x**i)/fact
+
+print("Sum of the series: ", result)
+
