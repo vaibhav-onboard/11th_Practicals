@@ -1,0 +1,6 @@
+numbers_string = input("Enter numbers separated by space: ")
+
+numbers = tuple(int(num) for num in numbers_string.split())
+
+print(numbers)
+
