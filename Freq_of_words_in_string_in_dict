@@ -1,0 +1,20 @@
+string = input("Enter a string: ")
+
+words = string.split()
+
+counts = {}
+
+for word in words:
+
+    if word in counts:
+
+        counts[word] += 1
+
+    else:
+
+        counts[word] = 1
+
+for word, count in counts.items():
+
+    print(word + " occurs " + str(count) + " times")
+
