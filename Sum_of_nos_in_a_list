@@ -1,0 +1,10 @@
+nums = input("Enter a list of numbers separated by space: ").split()
+
+result = 0
+
+for num in nums:
+
+    result += int(num)
+
+print("Sum of the numbers in the list: ", result)
+
