@@ -1,0 +1,105 @@
+def PUSH(Arr):
+    stack = []
+    for num in Arr:
+        if num % 5 == 0:
+            stack.append(num)
+    if stack:
+        print("Stack:", stack)
+    else:
+        print("Error: Stack is empty")
+
+# Usage example
+numbers = [10, 15, 20, 25, 30, 35, 40]
+PUSH(numbers)
+
+
+
+
+def POP(Arr):
+    if Arr:
+        return Arr.pop()
+    else:
+        print("Error: Stack is empty")
+
+# Usage example
+stack = [1, 2, 3, 4, 5]
+deleted_value = POP(stack)
+print("Deleted value:", deleted_value)
+
+
+
+
+def PushS(List, element):
+    List.append(element)
+
+def PopS(List):
+    if List:
+        return List.pop()
+    else:
+        print("Error: Stack is empty")
+
+# Usage example
+stack = []
+PushS(stack, 1)
+PushS(stack, 2)
+PushS(stack, 3)
+deleted_value = PopS(stack)
+print("Deleted value:", deleted_value)
+
+
+
+
+def DoPush(customers, customer):
+    customers.append(customer)
+
+def DoPop(customers):
+    if customers:
+        return customers.pop()
+    else:
+        print("Error: Stack is empty")
+
+# Usage example
+customer_stack = []
+DoPush(customer_stack, "Customer 1")
+DoPush(customer_stack, "Customer 2")
+DoPush(customer_stack, "Customer 3")
+deleted_customer = DoPop(customer_stack)
+print("Deleted customer:", deleted_customer)
+
+
+
+
+
+
+def POP_PUSH(LPop, LPush, N):
+    if N <= len(LPop):
+        for _ in range(N):
+            value = LPop.pop()
+            LPush.append(value)
+    else:
+        print("Pop not possible")
+
+# Usage example
+LPop = [10, 15, 20, 30]
+LPush = []
+N = 2
+POP_PUSH(LPop, LPush, N)
+print("LPop:", LPop)
+print("LPush:", LPush)
+
+
+
+
+
+def POPSTACK(L):
+    if L:
+        return L.pop()
+    else:
+        print("Error: Stack is empty")
+
+# Usage example
+stack = [1, 2, 3, 4, 5]
+deleted_value = POPSTACK(stack)
+print("Deleted value:", deleted_value)
+
+
